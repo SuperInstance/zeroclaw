@@ -1,0 +1,17 @@
+{
+  "name": "zeroclaw",
+  "version": "0.1.0",
+  "description": "I Know Kung Fu. Now Guns Lots of Guns.",
+  "main": "dist/cli.js",
+  "bin": { "zeroclaw": "dist/cli.js" },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js run",
+    "dev": "tsc && node dist/cli.js run"
+  },
+  "keywords": ["agent", "ai", "framework", "repo-native", "skills", "equipment"],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": { "typescript": "^5.4.0", "@cloudflare/workers-types": "^4.20240405.0" }
+}
