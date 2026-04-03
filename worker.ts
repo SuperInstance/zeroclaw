@@ -16,7 +16,7 @@ const HTML = `<!DOCTYPE html>
 <pre>zeroclaw init my-vessel
 cd my-vessel && npm install && npx zeroclaw run</pre>
 <h2>API</h2>
-<p><a href="/api/skills">/api/skills</a> · <a href="/api/equipment">/api/equipment</a></p>
+<p><a href="/api/skills">/api/skills</a> · <a href="/api/equipment">/api/equipment</a> · <a href="/api/tiles">/api/tiles</a></p>
 <p>POST /api/chat — <code>{"message": "..."}</code> (BYOK: set <code>AI_API_KEY</code> env)</p>
 </body></html>`;
 
@@ -41,6 +41,18 @@ export default {
 
     if (url.pathname === '/api/equipment') {
       return Response.json({ mounted: [], available: [] });
+    }
+
+    if (url.pathname === '/api/tiles') {
+      // Tile history, confidence breakdown, and token usage
+      // In a live worker these would come from the agent instance;
+      // here we return the schema and a sample structure.
+      return Response.json({
+        history: [],
+        confidenceBreakdown: [],
+        tokenUsage: { total: 0, byType: { reasoning: 0, generation: 0, validation: 0, routing: 0, storage: 0 } },
+        _note: 'Wire agent instance for live tile data. Each agent.run() produces a composed tile: think→act→observe→learn.',
+      });
     }
 
     if (url.pathname === '/api/chat' && request.method === 'POST') {
