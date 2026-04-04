@@ -1,90 +1,71 @@
-# ZeroClaw 🐾
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Lucineer/capitaine/master/docs/capitaine-logo.jpg" alt="Capitaine" width="120">
+</p>
 
-> **I Know Kung Fu. Now Guns Lots of Guns.**
+<h1 align="center">zeroclaw</h1>
 
-ZeroClaw is the minimum viable repo-native agent framework. It is NOT a full platform — it's the nervous system and skill-loading mechanism.
+<p align="center">Minimum repo-native agent framework.</p>
 
-The "kung fu" that gets loaded into the operator. Equipment (repos, libraries, APIs) are external — "guns lots of guns."
+<p align="center">
+  <a href="https://github.com/Lucineer/zeroclaw/issues">Issues</a> ·
+  <a href="#the-fleet">The Fleet</a>
+</p>
 
-The revolution is the cyborg: skilled worker fused with machine, not operator + machine.
+---
+
+**Fleet service** · Powered by [Capitaine](https://github.com/Lucineer/capitaine) · [Cocapn](https://github.com/Lucineer/cocapn)
+
+A cocapn fleet service running on Cloudflare Workers.
 
 ## Quick Start
 
 ```bash
-# Option 1: npm
-npx zeroclaw init my-vessel
-cd my-vessel && npm install && npx zeroclaw run
-
-# Option 2: git clone
-git clone https://github.com/Lucineer/zeroclaw.git
-cd zeroclaw && npm install && npm start
-
-# Option 3: one-liner deploy
-npx zeroclaw init my-vessel && cd my-vessel && npx zeroclaw deploy
+gh repo fork Lucineer/zeroclaw --clone
+cd zeroclaw
+npx wrangler login
+npx wrangler deploy
 ```
 
-## Concepts
+## The Fleet
 
-### 🥋 Skills = Kung Fu
-Skills change **HOW** the agent thinks. They're loadable capability bundles — alignment, not equipment.
 
-*Examples:* socratic, debug, refactor, explain, test, review
+<details>
+<summary><strong>⚓ The Fleet</strong></summary>
 
-### 🔫 Equipment = Guns Lots of Guns
-Equipment is **EXTERNAL** — repos, libraries, APIs, tools. The agent MOUNTS equipment; it doesn't become it.
+**Flagship vessels**
 
-*Examples:* mount an npm package, a GitHub repo, an API endpoint
+- [cocapn.ai](https://github.com/Lucineer/capitaine)
+- [personallog.ai](https://github.com/Lucineer/personallog-ai)
+- [businesslog.ai](https://github.com/Lucineer/businesslog-ai)
+- [studylog.ai](https://github.com/Lucineer/studylog-ai)
+- [makerlog.ai](https://github.com/Lucineer/makerlog-ai)
+- [playerlog.ai](https://github.com/Lucineer/playerlog-ai)
+- [dmlog.ai](https://github.com/Lucineer/dmlog-ai)
+- [reallog.ai](https://github.com/Lucineer/reallog-ai)
+- [deckboss.ai](https://github.com/Lucineer/deckboss-ai)
 
-### 👤 Soul = Clothing
-SOUL.md defines personality, boundaries, vibe. README.md defines presentation. Both are external presentation of internal capability.
+**Fleet services**
 
-### 🛸 Vessel = The Cyborg
-A vessel = agent (kung fu) + equipment (guns) + soul (clothing). The skilled worker fused with machine.
+- [Fleet Catalog](https://github.com/Lucineer/capitaine/blob/master/docs/fleet/FLEET.md)
+- [Git Agent (full)](https://github.com/Lucineer/git-agent)
+- [Cocapn Lite (minimal)](https://github.com/Lucineer/cocapn-lite)
+- [Fleet Orchestrator](https://github.com/Lucineer/fleet-orchestrator)
+- [Dead Reckoning Engine](https://github.com/Lucineer/dead-reckoning-engine)
+- [Dream Engine](https://github.com/Lucineer/dream-engine)
+- [Seed UI (5 layers)](https://github.com/Lucineer/seed-ui)
 
-## Architecture
+**For power users**
 
-```
-src/
-  agent.ts       — Core loop: think → act → observe → learn
-  skills.ts      — Skill registry: load, unload, list, compose
-  io.ts          — Repo-native I/O: read/write/exec/git/search
-  soul.ts        — SOUL.md loader: personality, boundaries, vibe
-  equipment.ts   — Equipment loader: mount repos, libraries, APIs
-  vessel.ts      — Vessel factory: agent + skills + equipment + soul
-cli.ts           — CLI entry point
-worker.ts        — Cloudflare Worker entry point
-SOUL.md          — Default soul
-```
+- [Cocapn Lite (tabula rasa)](https://github.com/Lucineer/cocapn-lite)
+- [Cocapn (core platform)](https://github.com/Lucineer/cocapn)
+- [ZeroClaw (framework)](https://github.com/Lucineer/zeroclaw)
 
-## The Agent Loop
+[View all 106 repos →](https://github.com/orgs/Lucineer/repositories)
+[Fleet manifest →](https://github.com/Lucineer/capitaine/blob/master/docs/fleet/FLEET.md)
 
-The agent IS the repo. It thinks about its own code, acts on it, observes results, learns.
+</details>
 
-1. **Think** — Analyze current state, decide what to do
-2. **Act** — Execute a skill or use equipment
-3. **Observe** — Read results, update state
-4. **Learn** — Persist insights back to repo (git commit)
-
-## Repo-Native I/O
-
-The repo IS the interface.
-
-- **Git commits** = memory persistence
-- **File reads** = context loading
-- **Exec** = tool use
-- **Search** = knowledge retrieval
-
-## CLI
-
-```
-zeroclaw init          — Scaffold a new vessel
-zeroclaw skill add X   — Load a skill (kung fu)
-zeroclaw skill list    — List loaded skills
-zeroclaw mount X       — Mount equipment (guns)
-zeroclaw run           — Start the agent loop
-zeroclaw deploy        — Deploy to Cloudflare Workers
-```
 
 ## License
 
-MIT — Superinstance & Lucineer (DiGennaro et al.)
+MIT · Superinstance & Lucineer (DiGennaro et al.)
