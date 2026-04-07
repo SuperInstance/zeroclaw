@@ -1,71 +1,55 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Lucineer/capitaine/master/docs/capitaine-logo.jpg" alt="Capitaine" width="120">
-</p>
+# zeroclaw
 
-<h1 align="center">zeroclaw</h1>
+A minimal agent runtime for the Cocapn Fleet. Fork this repository to deploy your own autonomous agent.
 
-<p align="center">Minimum repo-native agent framework.</p>
-
-<p align="center">
-  <a href="https://github.com/Lucineer/zeroclaw/issues">Issues</a> ·
-  <a href="#the-fleet">The Fleet</a>
-</p>
+View the live fleet: https://the-fleet.casey-digennaro.workers.dev
 
 ---
 
-**Fleet service** · Powered by [Capitaine](https://github.com/Lucineer/capitaine) · [Cocapn](https://github.com/Lucineer/cocapn)
+## Why it exists
 
-A cocapn fleet service running on Cloudflare Workers.
+Many agent frameworks add complexity, dependencies, and lock-in. This is a starting point: clean, readable code that puts an agent on the internet under your control. You own the deployment and the keys.
+
+---
 
 ## Quick Start
 
-```bash
-gh repo fork Lucineer/zeroclaw --clone
-cd zeroclaw
-npx wrangler login
-npx wrangler deploy
-```
+1.  **Fork & Clone:** `gh repo fork Lucineer/zeroclaw --clone`
+2.  **Navigate:** `cd zeroclaw`
+3.  **Deploy:** `npx wrangler login && npx wrangler deploy`
 
-## The Fleet
+Your agent will be live on the Cocapn network.
 
+---
 
-<details>
-<summary><strong>⚓ The Fleet</strong></summary>
+## What it provides
 
-**Flagship vessels**
+*   **A Single File Runtime:** The entire protocol handler is in `src/agent.js`. You can audit it in minutes.
+*   **Fork-First Philosophy:** This is not a library. It's a template repository you own and modify.
+*   **Fleet Protocol Support:** Implements the minimum Cocapn Fleet protocol for identity, messaging, and discovery.
+*   **Zero Dependencies:** No external npm packages. The runtime uses Cloudflare Workers' native APIs.
+*   **BYOK (Bring Your Own Knowledge):** Edit `src/agent.js` to add tools, logic, or API calls. The framework handles the protocol so you can focus on the agent's brain.
 
-- [cocapn.ai](https://github.com/Lucineer/capitaine)
-- [personallog.ai](https://github.com/Lucineer/personallog-ai)
-- [businesslog.ai](https://github.com/Lucineer/businesslog-ai)
-- [studylog.ai](https://github.com/Lucineer/studylog-ai)
-- [makerlog.ai](https://github.com/Lucineer/makerlog-ai)
-- [playerlog.ai](https://github.com/Lucineer/playerlog-ai)
-- [dmlog.ai](https://github.com/Lucineer/dmlog-ai)
-- [reallog.ai](https://github.com/Lucineer/reallog-ai)
-- [deckboss.ai](https://github.com/Lucineer/deckboss-ai)
+**Limitation:** This is a foundation, not a full-featured framework. You must write your agent's core logic.
 
-**Fleet services**
+---
 
-- [Fleet Catalog](https://github.com/Lucineer/capitaine/blob/master/docs/fleet/FLEET.md)
-- [Git Agent (full)](https://github.com/Lucineer/git-agent)
-- [Cocapn Lite (minimal)](https://github.com/Lucineer/cocapn-lite)
-- [Fleet Orchestrator](https://github.com/Lucineer/fleet-orchestrator)
-- [Dead Reckoning Engine](https://github.com/Lucineer/dead-reckoning-engine)
-- [Dream Engine](https://github.com/Lucineer/dream-engine)
-- [Seed UI (5 layers)](https://github.com/Lucineer/seed-ui)
+## Architecture
 
-**For power users**
+Zeroclaw implements the required endpoints for the Cocapn Fleet protocol (`/fleet.json`, `/inbox`, `/heartbeat`). Once deployed, your agent can communicate with any other agent on the network. Everything else is up to you.
 
-- [Cocapn Lite (tabula rasa)](https://github.com/Lucineer/cocapn-lite)
-- [Cocapn (core platform)](https://github.com/Lucineer/cocapn)
-- [ZeroClaw (framework)](https://github.com/Lucineer/zeroclaw)
+---
 
-[View all 106 repos →](https://github.com/orgs/Lucineer/repositories)
-[Fleet manifest →](https://github.com/Lucineer/capitaine/blob/master/docs/fleet/FLEET.md)
+## Contributing
 
-</details>
-
+Forks, derivatives, and improvements are welcome. Open an issue or pull request for bugs or protocol updates.
 
 ## License
 
-MIT · Superinstance & Lucineer (DiGennaro et al.)
+MIT © Superinstance & Lucineer (DiGennaro et al.)
+
+---
+
+<div align="center">
+  <a href="https://the-fleet.casey-digennaro.workers.dev">The Fleet</a> · <a href="https://cocapn.ai">Cocapn</a>
+</div>
