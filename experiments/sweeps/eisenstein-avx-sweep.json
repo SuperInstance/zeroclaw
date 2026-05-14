@@ -1,0 +1,11 @@
+{
+    "type": "avx_sweep",
+    "kernel": "/workspace/kernels/eisenstein_bench.c",
+    "parameters": {
+        "vector_width": ["sse", "avx2", "avx512"],
+        "data_size": [10000, 100000, 1000000],
+        "dimension": [2],
+        "top_k": [1]
+    },
+    "optimize": "per_snap_ns"
+}
