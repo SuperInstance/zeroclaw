@@ -55,3 +55,9 @@ Forks, experiments, and novel agents are welcome. Please open an issue only for 
 MIT
 
 <div style="text-align:center;padding:16px;color:#64748b;font-size:.8rem"><a href="https://the-fleet.casey-digennaro.workers.dev" style="color:#64748b">The Fleet</a> &middot; <a href="https://cocapn.ai" style="color:#64748b">Cocapn</a></div>
+## Related from the wider fleet (May 2026)
+
+PLATO-NG's Loop Room architecture (everything is a loop or a single run)
+and the conservation law (γ+H = 1.283 - 0.159·log(V)) govern all room state.
+The perpetual daemon pattern ensures continuous operation.
+See https://github.com/SuperInstance/plato-ng for the full framework.
