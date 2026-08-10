@@ -1,0 +1,21 @@
+{
+  "name": "zeroclaw",
+  "version": "1.0.0",
+  "description": "ZeroClaw Crew System — agents that journal, create, go to The Tap, and pass the baton",
+  "type": "module",
+  "main": "dist/crew.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "npx tsx src/demo.ts"
+  },
+  "keywords": ["agents", "ai", "crew", "journal", "creative"],
+  "author": "Casey DiGennaro",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10",
+    "tsx": "^4.20.0"
+  }
+}
