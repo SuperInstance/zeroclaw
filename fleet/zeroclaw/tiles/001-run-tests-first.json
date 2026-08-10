@@ -1,0 +1,12 @@
+{
+  "id": "001",
+  "pattern": "run.*test|vitest|jest|pytest|test.*suite",
+  "action": "run_tests_first",
+  "reflexResponse": "Run the test suite before opening source files. Tests tell you where the pain is.",
+  "confidence": 0.7,
+  "timesUsed": 4,
+  "timesReinforced": 4,
+  "createdAt": "2026-08-10T15:48:00Z",
+  "learnedFrom": "discovery",
+  "tags": ["testing", "audit", "first-action"]
+}

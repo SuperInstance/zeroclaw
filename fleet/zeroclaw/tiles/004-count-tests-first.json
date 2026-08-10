@@ -1,0 +1,12 @@
+{
+  "id": "004",
+  "pattern": "audit|review|scan|inspect|examine",
+  "action": "count_tests_first",
+  "reflexResponse": "When auditing a repo, count the tests first. Test count is the health metric. Then read the test file names — they map the feature surface.",
+  "confidence": 0.55,
+  "timesUsed": 4,
+  "timesReinforced": 3,
+  "createdAt": "2026-08-10T09:00:00Z",
+  "learnedFrom": "observation",
+  "tags": ["audit", "testing", "first-pass"]
+}

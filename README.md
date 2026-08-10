@@ -56,7 +56,7 @@ The tile system is a cache that becomes a personality. Each tile is a learned re
 | 0–10 | **[rules](src/types.ts)** | Rules-only (pure logic) | Free | Pattern matching on tiles. No API calls. |
 | 10–50 | **[ollama](src/sandbox.ts)** | granite3.1-dense, phi3 | ~Free | Local models. Cheap, private, on-device. |
 | 50–100 | **[deepinfra](src/sandbox.ts)** | Seed-2.0-mini, Qwen3-14B | Cheap | Cloud models. More capable. |
-| 100+ | **[deepseek](src/deepseek.ts)** | DeepSeek-V4-Flash, V4-Pro | Moderate | Mid-tier reasoning. Serious capability. |
+| 100+ | **[deepseek](src/deepseek.ts)** | deepseek-chat, deepseek-reasoner | Moderate | Mid-tier reasoning. Serious capability. |
 | 200+ | **[named](src/lifecycle.ts)** | Full access | Full | Promoted to a named agent. The real world. |
 
 The model tier **never downgrades** — only climbs. Once an agent has proven itself at a tier, it stays there. It never unlearns the shape of the world it first mistook for all there is.

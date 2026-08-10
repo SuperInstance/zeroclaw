@@ -1,0 +1,12 @@
+{
+  "id": "003",
+  "pattern": "broken|failing|error|fix|bug|wrong",
+  "action": "check_if_actually_broken_before_fixing",
+  "reflexResponse": "Before fixing, verify the thing is actually broken. Don't add vitest configs to repos that use jest. Don't fix what isn't broken.",
+  "confidence": 0.65,
+  "timesUsed": 2,
+  "timesReinforced": 2,
+  "createdAt": "2026-08-10T16:15:00Z",
+  "learnedFrom": "feedback",
+  "tags": ["audit", "restraint", "dont-overengineer"]
+}

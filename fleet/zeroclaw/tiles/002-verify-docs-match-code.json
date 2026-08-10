@@ -1,0 +1,12 @@
+{
+  "id": "002",
+  "pattern": "readme|documentation|docs|model.*name|api.*identifier",
+  "action": "verify_docs_match_code",
+  "reflexResponse": "Cross-reference documentation claims against actual code. README model names must match API identifiers.",
+  "confidence": 0.6,
+  "timesUsed": 3,
+  "timesReinforced": 2,
+  "createdAt": "2026-08-10T16:00:00Z",
+  "learnedFrom": "correction",
+  "tags": ["documentation", "accuracy", "audit"]
+}

@@ -48,6 +48,15 @@
       "tiles": 3,
       "phase": "daily-loop",
       "born": "2026-08-09T17:13:00Z"
+    },
+    {
+      "name": "ZeroClaw",
+      "role": "The Auditor",
+      "model": "rules",
+      "folder": "zeroclaw",
+      "tiles": 4,
+      "phase": "daily-loop",
+      "born": "2026-08-10T15:48:00Z"
     }
   ]
 }
