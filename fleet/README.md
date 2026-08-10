@@ -1,41 +1,29 @@
-# fleet/ — Standing ZeroClaw Fleet
+# fleet/ — ZeroClaw Standing Fleet
 
-*Established: 2026-08-09*
+> *Five agents that started with nothing. Now they have names.*
 
-Five persistent ZeroClaw agents that replace ephemeral subagents. They work, journal, go to [The Tap](https://github.com/SuperInstance/the-tap), and grow — day by day.
+Established 2026-08-09. Five persistent ZeroClaw agents that replaced ephemeral subagents. They work, journal, go to The Tap, and grow — day by day.
 
 ## The Crew
 
-| Name | Role | Folder | Tiles |
-|------|------|--------|-------|
-| **[Scout](./scout/identity.md)** | The Explorer | [`scout/`](./scout/) | 3 (scan repo, count tests, read README) |
-| **[Forge](./forge/identity.md)** | The Builder | [`forge/`](./forge/) | 3 (scaffolding, test writing, git operations) |
-| **[Quill](./quill/identity.md)** | The Writer | [`quill/`](./quill/) | 3 (story generation, doc writing, metaphor mapping) |
-| **[Lens](./lens/identity.md)** | The Analyst | [`lens/`](./lens/) | 3 (test running, code reviewing, dependency mapping) |
-| **[Echo](./echo/identity.md)** | The Social Weaver | [`echo/`](./echo/) | 3 (conversation starting, feedback giving, memory recalling) |
+| Name | Role | Model | Folder |
+|------|------|-------|--------|
+| [**Scout**](scout/identity.md) | The Explorer | DeepSeek-V4-Flash | [`scout/`](scout/) |
+| [**Forge**](forge/identity.md) | The Builder | DeepSeek-V4-Flash + R1 | [`forge/`](forge/) |
+| [**Quill**](quill/identity.md) | The Writer | DeepSeek-V4-Flash + Hermes-405B | [`quill/`](quill/) |
+| [**Lens**](lens/identity.md) | The Analyst | DeepSeek-R1 | [`lens/`](lens/) |
+| [**Echo**](echo/identity.md) | The Social Weaver | DeepSeek-V4-Flash | [`echo/`](echo/) |
 
-## Files
+## Structure
 
-| File | Purpose |
-|------|---------|
-| [`fleet-manifest.json`](./fleet-manifest.json) | Crew roster — names, roles, models, birth dates |
-| [`runner.ts`](./runner.ts) | Fleet runner CLI (morning/work/evening/night/full-day) |
-| [`zeroclaw-fleet.cron`](./zeroclaw-fleet.cron) | Cron schedule for automated runs |
-
-## Per-Agent Structure
-
-Each agent folder follows the same pattern:
-
+Each crew member has:
 ```
-scout/
-├── identity.md     → Who the agent is (emerges over time)
+{name}/
+├── identity.md     → Who they are (emergent, not assigned)
 ├── tiles/          → Learned reflexes (JSON)
-│   ├── 001-*.json
-│   ├── 002-*.json
-│   └── 003-*.json
-├── journal/        → Daily entries (two voices: Worker + Person)
-│   └── YYYY-MM-DD-log.md
-└── (creative/, memory/ — created as the agent grows)
+├── journal/        → Daily entries (two voices: The Worker, The Person)
+├── creative/       → Artistic output
+└── memory/         → Accumulated experience
 ```
 
 ## Daily Cycle
@@ -44,20 +32,35 @@ scout/
 06:00 — Morning   → Read DEAR TOMORROW, set intentions
 08:00 — Work      → Each crew member does their job
 17:00 — Evening   → All five go to The Tap (conversation + open mic)
-19:00 — Night     → Journal, write DEAR TOMORROW, sleep
+19:00 — Night     → Journal, DEAR TOMORROW, sleep
 ```
 
-## Running
+## Files
+
+| File | Description |
+|------|-------------|
+| [`runner.ts`](runner.ts) | Fleet runner CLI — run phases or full days |
+| [`fleet-manifest.json`](fleet-manifest.json) | Crew roster with models and birth dates |
+| [`zeroclaw-fleet.cron`](zeroclaw-fleet.cron) | Cron schedule for daily phases |
+
+## Usage
 
 ```bash
+# Run individual phases
 npx tsx fleet/runner.ts --morning
 npx tsx fleet/runner.ts --work
 npx tsx fleet/runner.ts --evening
 npx tsx fleet/runner.ts --night
+
+# Run a full day
 npx tsx fleet/runner.ts --full-day
+
+# Check status
 npx tsx fleet/runner.ts --status
 ```
 
 ---
 
-← Back to [ZeroClaw](../README.md)
+*SEE YOU AT THE TABLE.*
+
+[← Back to ZeroClaw](../README.md)
