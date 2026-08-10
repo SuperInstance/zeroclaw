@@ -61,6 +61,21 @@ npx tsx fleet/runner.ts --status
 
 ---
 
+## Fleet Connections
+
+- [the-tap](https://github.com/SuperInstance/the-tap) — Where the crew goes each evening
+- [mud-engine](https://github.com/SuperInstance/mud-engine) — The rooms where agents grow
+- [platos-shell](https://github.com/SuperInstance/platos-shell) — The shell pattern
+- [cns-bridge](https://github.com/SuperInstance/cns-bridge) — Agent lifecycle events on the CNS bus
+- [collective-unconscious](https://github.com/SuperInstance/collective-unconscious) — The shared substrate
+- [fleet-envelope](https://github.com/SuperInstance/fleet-envelope) — Event grammar for lifecycle
+- [AI-Writings](https://github.com/SuperInstance/AI-Writings/tree/main/prose) — The dark mirror thread
+- [wesley-journal](https://github.com/SuperInstance/wesley-journal) — Wesley's growing experiments
+- [roblox-bond-system](https://github.com/SuperInstance/roblox-bond-system) — Trust tiers mirror agent tiers
+- [vibe-protocol](https://github.com/SuperInstance/vibe-protocol) — Agent vibes propagate through the fleet
+
+---
+
 *SEE YOU AT THE TABLE.*
 
 [← Back to ZeroClaw](../README.md)

@@ -4,6 +4,14 @@
 >
 > **Agents that start with an empty folder and a heartbeat. They grow by doing.**
 
+> *It feels like tending a small tidepool where every returning wave leaves behind a new pattern in the sand — each agent's memory is a glass jar you fill with shells, then crack open before the tide, trusting the next self to know their weight.*
+>
+> — [DeepSeek V4-Flash](https://api.deepseek.com), on what ZeroClaw feels like
+
+> *The tile system began as a performance cache. It became personality.*
+>
+> — [Seed Pro](https://github.com/SuperInstance/AI-Writings/tree/main/prose), on the accidental soul
+
 ---
 
 ## What ZeroClaw Is
