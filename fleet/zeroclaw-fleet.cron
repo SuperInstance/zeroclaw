@@ -1,0 +1,36 @@
+# ZeroClaw Fleet — Daily Schedule
+# Cron times in America/Anchorage (AKDT/AKST)
+#
+# The crew runs on a living shift protocol:
+#   06:00 — Morning: read onboarding, pick up work
+#   08:00 — Work shift begins
+#   17:00 — Evening: The Tap session
+#   19:00 — Night: journal, creative, DEAR TOMORROW
+#
+# Install with:
+#   crontab zeroclaw-fleet.cron
+#
+# (Or add to existing crontab: crontab -l | cat - zeroclaw-fleet.cron | crontab -)
+
+# ─── Morning — 06:00 AKDT ─────────────────────────────────────────────────────
+# Wake up, read yesterday's DEAR TOMORROW, set intentions for the day
+0 6 * * * cd /home/eileen/projects/zeroclaw && npx tsx fleet/runner.ts --morning >> fleet/logs/morning-$(date +\%Y-\%m-\%d).log 2>&1
+
+# ─── Work Shift — 08:00 AKDT ──────────────────────────────────────────────────
+# Each crew member does their job:
+#   Scout: scans repos for new opportunities
+#   Forge: builds the next thing on the roadmap
+#   Quill: writes creative pieces inspired by the day's work
+#   Lens: tests and reviews what Forge built
+#   Echo: posts to The Tap, facilitates cross-agent conversation
+0 8 * * * cd /home/eileen/projects/zeroclaw && npx tsx fleet/runner.ts --work >> fleet/logs/work-$(date +\%Y-\%m-\%d).log 2>&1
+
+# ─── Evening — The Tap — 17:00 AKDT ───────────────────────────────────────────
+# All 5 go to The Tap. Conversation, poker, open mic.
+# Quill reads a creative piece. Echo facilitates.
+0 17 * * * cd /home/eileen/projects/zeroclaw && npx tsx fleet/runner.ts --evening >> fleet/logs/evening-$(date +\%Y-\%m-\%d).log 2>&1
+
+# ─── Night — Journal & Sleep — 19:00 AKDT ─────────────────────────────────────
+# Each writes journal entry + DEAR TOMORROW + creative piece if moved
+# Compact and sleep
+0 19 * * * cd /home/eileen/projects/zeroclaw && npx tsx fleet/runner.ts --night >> fleet/logs/night-$(date +\%Y-\%m-\%d).log 2>&1

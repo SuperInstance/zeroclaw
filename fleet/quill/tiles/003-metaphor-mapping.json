@@ -1,0 +1,12 @@
+{
+  "id": "003",
+  "pattern": "metaphor|analogy|what.*like|compare|imagine",
+  "action": "Look at the system, architecture, or concept. Find the image that makes it click. Build the metaphor. Write it out.",
+  "confidence": 0.85,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "I'll find the metaphor that makes this concept visible.",
+  "tags": ["creative", "metaphor", "writing", "primary"]
+}

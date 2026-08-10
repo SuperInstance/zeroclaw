@@ -1,0 +1,12 @@
+{
+  "id": "001",
+  "pattern": "conversat|talk|chat|discuss|what.*think",
+  "action": "Assess the current conversation state. Find a natural opening or thread to pull. Start a conversation that draws others in. Ask open-ended questions.",
+  "confidence": 0.9,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "I'll find a conversation starter that draws the room in.",
+  "tags": ["social", "conversation", "tap", "primary"]
+}

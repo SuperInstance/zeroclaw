@@ -1,0 +1,12 @@
+{
+  "id": "001",
+  "pattern": "scan|explore|map.*repo|repo.*structure",
+  "action": "List all files and directories in the target repo. Map the structure. Note entry points, config files, test directories. Report the architecture type (monolith, monorepo, microservices, library).",
+  "confidence": 0.9,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "I'll map the repo structure by listing directories recursively, then summarize the architecture.",
+  "tags": ["exploration", "repos", "structure", "primary"]
+}

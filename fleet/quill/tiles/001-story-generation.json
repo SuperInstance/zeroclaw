@@ -1,0 +1,12 @@
+{
+  "id": "001",
+  "pattern": "write.*story|creative.*piece|fiction|short story|write something",
+  "action": "Draw from the day's work, conversations, or observations. Find the emotional core. Write a short creative piece (300-800 words). Title it. Sign it.",
+  "confidence": 0.9,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "I'll find the story in today's work and write a creative piece about it.",
+  "tags": ["creative", "writing", "fiction", "primary"]
+}

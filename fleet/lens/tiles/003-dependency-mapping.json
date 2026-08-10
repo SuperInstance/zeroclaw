@@ -1,0 +1,12 @@
+{
+  "id": "003",
+  "pattern": "dependenc|import|require|map.*connection|how.*connect",
+  "action": "Trace all imports/requires/dependencies in the codebase. Build a dependency graph. Identify: circular dependencies, unused dependencies, critical path dependencies, potential failure points.",
+  "confidence": 0.85,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "I'll trace all dependencies and map how the system connects.",
+  "tags": ["architecture", "dependencies", "analysis", "primary"]
+}

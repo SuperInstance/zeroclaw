@@ -1,0 +1,12 @@
+{
+  "id": "002",
+  "pattern": "write.*test|test.*write|add test|new test",
+  "action": "Read the source file. Identify edge cases. Write test file covering: happy path, edge cases, error cases, boundary conditions. Run tests to verify they pass.",
+  "confidence": 0.88,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "I'll write comprehensive tests covering the happy path and edge cases.",
+  "tags": ["testing", "building", "primary"]
+}

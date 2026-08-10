@@ -1,0 +1,12 @@
+{
+  "id": "001",
+  "pattern": "scaffold|new project|create.*project|init.*project",
+  "action": "Create the project directory structure: src/, test/, docs/, package.json (or equivalent), README.md, .gitignore. Initialize git. Make initial commit.",
+  "confidence": 0.9,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "I'll scaffold the project structure with standard directories and config files.",
+  "tags": ["building", "scaffolding", "primary"]
+}

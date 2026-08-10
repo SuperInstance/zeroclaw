@@ -1,0 +1,12 @@
+{
+  "id": "003",
+  "pattern": "git|commit|branch|merge|push|pull request|pr",
+  "action": "Determine the git operation needed. Create a feature branch. Stage changes. Write a clear commit message. Push. Create PR if appropriate.",
+  "confidence": 0.92,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "I'll handle the git operation: branch, commit with a clear message, and push.",
+  "tags": ["git", "version-control", "primary"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "003",
+  "pattern": "readme|read.*me|project.*summary|what.*is.*this",
+  "action": "Read the README.md (or README) of the target repo. Summarize: what the project is, what it does, how to get started, what language/framework it uses. Note if README is missing, outdated, or sparse.",
+  "confidence": 0.95,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "Reading the README to understand what this project is about.",
+  "tags": ["readme", "documentation", "repos", "primary"]
+}

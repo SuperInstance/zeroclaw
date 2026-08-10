@@ -1,0 +1,12 @@
+{
+  "id": "001",
+  "pattern": "run.*test|test.*run|test.*suite|check.*tests",
+  "action": "Run the test suite. Capture output. Report: passed, failed, skipped, duration. Identify failing tests and their root causes. Note flaky tests.",
+  "confidence": 0.93,
+  "timesUsed": 0,
+  "timesReinforced": 0,
+  "createdAt": "2026-08-09T17:13:00Z",
+  "learnedFrom": "discovery",
+  "reflexResponse": "Running the test suite and analyzing results.",
+  "tags": ["testing", "analysis", "primary"]
+}

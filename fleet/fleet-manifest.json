@@ -1,0 +1,53 @@
+{
+  "name": "ZeroClaw Standing Fleet",
+  "created": "2026-08-09T17:13:00Z",
+  "members": [
+    {
+      "name": "Scout",
+      "role": "The Explorer",
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "folder": "scout",
+      "tiles": 3,
+      "phase": "daily-loop",
+      "born": "2026-08-09T17:13:00Z"
+    },
+    {
+      "name": "Forge",
+      "role": "The Builder",
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "reasoner": "deepseek-ai/DeepSeek-R1",
+      "folder": "forge",
+      "tiles": 3,
+      "phase": "daily-loop",
+      "born": "2026-08-09T17:13:00Z"
+    },
+    {
+      "name": "Quill",
+      "role": "The Writer",
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "special": "NousResearch/Hermes-3-Llama-3.1-405B",
+      "folder": "quill",
+      "tiles": 3,
+      "phase": "daily-loop",
+      "born": "2026-08-09T17:13:00Z"
+    },
+    {
+      "name": "Lens",
+      "role": "The Analyst",
+      "model": "deepseek-ai/DeepSeek-R1",
+      "folder": "lens",
+      "tiles": 3,
+      "phase": "daily-loop",
+      "born": "2026-08-09T17:13:00Z"
+    },
+    {
+      "name": "Echo",
+      "role": "The Social Weaver",
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "folder": "echo",
+      "tiles": 3,
+      "phase": "daily-loop",
+      "born": "2026-08-09T17:13:00Z"
+    }
+  ]
+}
