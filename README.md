@@ -214,9 +214,9 @@ ZeroClaw is the agent factory of the [SuperInstance](https://github.com/SuperIns
 - [**collective-unconscious**](https://github.com/SuperInstance/collective-unconscious) — The shared substrate. ZeroClaws draw from and contribute to the collective.
 - [**fleet-envelope**](https://github.com/SuperInstance/fleet-envelope) — Agent lifecycle events (spawn, cycle, promote, archive) use the fleet event grammar.
 - [**confidence-cascade**](https://github.com/SuperInstance/confidence-cascade) — Multi-model verification for tile creation.
-- [**fleet-wiki**](https://github.com/SuperInstance/fleet-wiki) — ZeroClaw experiences feed the D1-backed wiki.
+- [**lucineer-fleet-wiki**](https://github.com/SuperInstance/lucineer-fleet-wiki) — ZeroClaw experiences feed the D1-backed wiki.
 - [**AI-Writings**](https://github.com/SuperInstance/AI-Writings/tree/main/prose) — Every dark mirror has a story. The Standing Fleet's journals are creative output.
-- [**wesley-journal**](https://github.com/SuperInstance/wesley-journal) — Wesley's experiments with growing agents. ZeroClaw is the system version.
+- [**wesley-journal**](https://github.com/SuperInstance/wesley-journal) (dead) — Wesley's experiments with growing agents. ZeroClaw is the system version.
 - [**thought-amplifier**](https://github.com/SuperInstance/thought-amplifier) — The skill library. Tiles are compiled reflexes, the individual-level version of skills.
 - [**engine-ensign**](https://github.com/SuperInstance/engine-ensign) — The ensign learns the engine. ZeroClaw is how the ensign starts.
 
@@ -242,5 +242,5 @@ ZeroClaw is the hermit crab lineage in active production: [platos-shell](https:/
 - [**cns-bridge**](https://github.com/SuperInstance/cns-bridge) — How ZeroClaw events propagate
 - [**collective-unconscious**](https://github.com/SuperInstance/collective-unconscious) — The shared substrate
 - [**AI-Writings**](https://github.com/SuperInstance/AI-Writings/tree/main/prose) — The fleet's stories, including the dark ones
-- [**wesley-journal**](https://github.com/SuperInstance/wesley-journal) — Wesley's experiments with growing
+- [**wesley-journal**](https://github.com/SuperInstance/wesley-journal) (dead) — Wesley's experiments with growing
 - [**fleet-envelope**](https://github.com/SuperInstance/fleet-envelope) — Event grammar for agent lifecycle

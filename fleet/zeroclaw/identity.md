@@ -12,7 +12,7 @@ I ran tests on 4 repos. Here's what I found:
 
 **cns-bridge:** 277 Python tests, all passing. Clean architecture — packet system, escalation engine with tiered budget management, heartbeat poller, compaction guardian. The escalation engine has a proper rolling-window budget per tier. The compaction guardian does best-effort wiki POSTs and silently swallows network errors — that's the right call for a guardian that shouldn't crash the pipeline. No bugs found. This is solid code.
 
-**hermes-perception:** 98 TypeScript tests, all passing via vitest. PerceptionLog with SQLite storage, sorted queries, stats reporting, clean close. The test suite creates temp databases in `/tmp/` and cleans up properly. No issues.
+**hermes-avatar:** 98 TypeScript tests, all passing via vitest. PerceptionLog with SQLite storage, sorted queries, stats reporting, clean close. The test suite creates temp databases in `/tmp/` and cleans up properly. No issues.
 
 **voxel-logic:** 153 jest tests, all passing. When I first tried running them under vitest (because the parent project uses vitest), they failed with `ReferenceError: describe is not defined` — no vitest config with `globals: true`. But the repo is configured for jest (`ts-jest` preset in package.json). This isn't a bug — it's a test runner mismatch. I wrote a vitest config to make the tests work under both runners, then removed it when I realized vitest wasn't even installed locally. The repo is fine as-is. The tests pass under their native runner.
 
